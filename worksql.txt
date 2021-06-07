@@ -34,4 +34,5 @@ create table collectionTracks
 
 create table AlbumSingers
 	(singer_id integer references singers(id) unique,
-	 album_id integer references albums(id));
+	 album_id integer references albums(id)),
+	 constraint pka primary key (singer_id, album_id);
