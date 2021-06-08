@@ -17,7 +17,7 @@ create table if not exists genre
 	(id serial primary key,
 	name varchar(40) not null unique);
 
-create table genreSinger
+create table genresinger
 	(singer_id integer references singers(id),
 	genre_id integer references genre(id),
 	 constraint pk primary key (singer_id, genre_id));
