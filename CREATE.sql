@@ -27,12 +27,12 @@ create table if not exists collection
 	 name varchar(40) not null,
 	 year integer not null);
 
-create table collectionTracks
+create table collectiontracks
 	(track_id integer references tracks(id),
 	 collection_id integer references collection(id),
 	 constraint pks primary key (track_id, collection_id));
 
-create table AlbumSingers
+create table albumsingers
 	(singer_id integer references singers(id),
 	 album_id integer references albums(id),
 	 constraint pka primary key (singer_id, album_id))
