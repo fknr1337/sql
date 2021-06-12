@@ -98,6 +98,10 @@ INSERT INTO genresinger (singer_id, genre_id)
 	VALUES(6, 1);
 INSERT INTO genresinger (singer_id, genre_id)
 	VALUES(8, 2);
+INSERT INTO genresinger (singer_id, genre_id)
+	VALUES(1, 2);
+INSERT INTO genresinger (singer_id, genre_id)
+	VALUES(2, 3);
 INSERT INTO albumsingers (singer_id, album_id)
 	VALUES(1, 1);
 INSERT INTO albumsingers (singer_id, album_id)
